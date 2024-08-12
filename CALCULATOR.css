@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg,#7C00FE,#F5004F)
+}
+
+.calculator {
+    width: 90%;
+    max-width: 400px;
+    background:linear-gradient(45deg,#399918,#FFDE4D);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#ipbox {
+    width: 90%;
+    height: 50px;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    color:#134870;
+}
+
+button {
+    width: 22%;
+    height: 50px;
+    margin: 1%;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #180161;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+    opacity: 0.5;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    #ipbox {
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    button {
+        height: 40px;
+        font-size: 1em;
+    }
+}
